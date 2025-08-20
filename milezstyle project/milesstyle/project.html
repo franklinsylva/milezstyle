@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="project.css">
     <link rel="icon" href="logo.jpg">
     <title>Fashion house | MilezStyle </title>
@@ -71,17 +73,18 @@
 
         <!-- FEATURE-SECTIONS -->
     <div class="container_main">
-        <section class="section_container collection_container">
-            <img src="../milesstyle/corporate2.jpg" alt="collection">
+        <!-- NEW COLLECTION -->
+        <section class="new_collection">
             <div class="collection_content">
-                <h2 class="section_title">New Collection</h2>
-                <p>#35 ITEMS</p>
-                <H4>Available In Store</H4>
-                <button class="btn">SHOP NOW</button>
+                <h2 class="collection_title">New Collection</h2>
+                <p>#35 Items <br> Available In Store</p>
+                <button class="btn collection">Shop Now</button>
             </div>
+            <img class="collection_img" src="../milesstyle/corporate2.jpg" alt="collection">
         </section>
 
-        <section class="section_container sale_container">
+
+        <section class="sale_container">
             <h2 class="section_title">On Sale</h2>
             <div class="sale_grid">
                 <div class="sale_card">
@@ -90,7 +93,8 @@
                         <p class="sale_subtitle">CORPORATE WEAR</p>
                         <H4 class="sale_title">Sale <span>40% </span>off</H4>
                         <p class="sale_subtitle">- DON'T MISS -</p>
-                        <button class="btn sale_btn">SHOP NOW</button>
+                        <button class="btn sale_btn"><ion-icon name="cart-outline"></ion-icon>
+                            Shop Now</button>
                     </div>
                 </div>
                 <div class="sale_card">
@@ -99,22 +103,23 @@
                         <p class="sale_subtitle">NATIVE WEAR</p>
                         <H4 class="sale_title">Sale <span>25% </span>off</H4>
                         <p class="sale_subtitle">- DON'T MISS -</p>
-                        <button class="btn sale_btn">SHOP NOW</button>
+                        <button class="btn sale_btn">Shop Now</button>
                     </div>
                 </div>
                 <div class="sale_card">
-                    <img src="../milesstyle/casual.jpg" alt="sale">
+                    <img src="../milesstyle/casual1.jpeg" alt="sale">
                     <div class="sale_content">
                         <p class="sale_subtitle">CASUAL</p>
                         <H4 class="sale_title">Sale <span>20% </span>off</H4>
                         <p class="sale_subtitle">- DON'T MISS -</p>
-                        <button class="btn sale_btn">SHOP NOW</button>
+                        <button class="btn sale_btn">Shop Now</button>
                     </div>
                 </div>
             </div>
         </section>
 
 
+        <!-- MUST HAVE FEATURE SECTION -->
         <section class="section_container musthave_container">
             <h2 class="section_title">Must Have</h2>
             <div class="musthave_nav">
@@ -127,129 +132,118 @@
             <div class="musthave_grid">
                 <div class="musthave_card">
                     <img src="../milesstyle/nativewear1.jpg" alt="must have">
-                    <h4>Basic wears</h4>
-                    <p><del>$45.00</del> $75.00</p>
+                    <h4 class="musthave_heading">Basic wears</h4>
+                    <p class="musthave_text"><del>$45.00</del> $75.00</p>
                     <button class="btn">
-                        <span class="material-symbols-outlined">add_shopping_cart</span>
                         Add To Cart
                     </button>
                 </div>
                 <div class="musthave_card">
                     <img src="../milesstyle/corporate1.jpg" alt="must have">
-                    <h4>Corporate Wears</h4>
-                    <p><del>$75.00</del> $65.00</p>
+                    <h4 class="musthave_heading">Corporate Wears</h4>
+                    <p class="musthave_text"><del>$75.00</del> $65.00</p>
                     <button class="btn">
-                        <span class="material-symbols-outlined">add_shopping_cart </span>
                         Add To Cart
                     </button>
                 </div>
 
                 <div class="musthave_card">
                     <img src="../milesstyle/native wear.jpg" alt="must have">
-                    <h4>Native Wears</h4>
-                    <p><del>$65.00</del> $55.00</p>
+                    <h4 class="musthave_heading">Native Wears</h4>
+                    <p class="musthave_text"><del>$65.00</del> $55.00</p>
                     <button class="btn">
-                        <span class="material-symbols-outlined">add_shopping_cart </span>
                         Add To Cart
                     </button>
                 </div>
 
                 <div class="musthave_card">
                     <img src="../milesstyle/nativewear2.jpeg" alt="must have">
-                    <h4>Native Wears</h4>
-                    <p><del>$65.00</del> $55.00</p>
+                    <h4 class="musthave_heading">Native Wears</h4>
+                    <p class="musthave_text"><del>$65.00</del> $55.00</p>
                     <button class="btn">
-                        <span class="material-symbols-outlined">add_shopping_cart</span>
                         Add To Cart
                     </button>
                 </div>
 
                 <div class="musthave_card">
                     <img src="../milesstyle/casual.jpg" alt="must have">
-                    <h4>Urban Wear</h4>
-                    <p><del>$35.00</del> $25.00</p>
+                    <h4 class="musthave_heading">Urban Wear</h4>
+                    <p class="musthave_text"><del>$35.00</del> $25.00</p>
                     <button class="btn">
-                        <span class="material-symbols-outlined">add_shopping_cart</span>
                         Add To Cart
                     </button>
                 </div>
 
                 <div class="musthave_card">
                     <img src="../milesstyle/casual3.jpg" alt="must have">
-                    <h4>Casual Wear</h4>
-                    <p><del>$35.00</del> $25.00</p>
+                    <h4 class="musthave_heading">Casual Wear</h4>
+                    <p class="musthave_text"><del>$35.00</del> $25.00</p>
                     <button class="btn">
-                        <span class="material-symbols-outlined">add_shopping_cart</span>
                         Add To Cart
                     </button>
                 </div>
 
                 <div class="musthave_card">
                     <img src="../milesstyle/corporate2.jpg" alt="must have">
-                    <h4>Corporate wear</h4>
-                    <p><del>$75.00</del> $65.00</p>
+                    <h4 class="musthave_heading">Corporate wear</h4>
+                    <p class="musthave_text"><del>$75.00</del> $65.00</p>
                     <button class="btn">
-                        <span class="material-symbols-outlined">add_shopping_cart</span>
                         Add To Cart
                     </button>
                 </div>
 
                 <div class="musthave_card">
                     <img src="../milesstyle/casual4.jpg" alt="must have">
-                    <h4>Basic wear</h4>
-                    <p><del>$35.00</del> $25.00</p>
+                    <h4 class="musthave_heading">Basic wear</h4>
+                    <p class="musthave_text"><del>$35.00</del> $25.00</p>
                     <button class="btn">
-                        <span class="material-symbols-outlined">add_shopping_cart</span>
                         Add To Cart
                     </button>
                 </div>
 
                 <div class="musthave_card">
                     <img src="../milesstyle/native4.jpg" alt="must have">
-                    <h4>Native Wear</h4>
-                    <p><del>$65.00</del> $55.00</p>
+                    <h4 class="musthave_heading">Native Wear</h4>
+                    <p class="musthave_text"><del>$65.00</del> $55.00</p>
                     <button class="btn">
-                        <span class="material-symbols-outlined">add_shopping_cart</span>
                         Add To Cart
                     </button>
                 </div>
 
                 <div class="musthave_card">
                     <img src="../milesstyle/casual2.jpg" alt="must have">
-                    <h4>Casual Wear</h4>
-                    <p><del>$35.00</del> $25.00</p>
+                    <h4 class="musthave_heading">Casual Wear</h4>
+                    <p class="musthave_text"><del>$35.00</del> $25.00</p>
                     <button class="btn">
-                        <span class="material-symbols-outlined">add_shopping_cart</span>
                         Add To Cart
                     </button>
                 </div>
 
                 <div class="musthave_card">
                     <img src="../milesstyle/corporate3.jpg" alt="must have">
-                    <h4>Corporate Wear</h4>
-                    <p><del>$75.00</del> $65.00</p>
+                    <h4 class="musthave_heading">Corporate Wear</h4>
+                    <p class="musthave_text"><del>$75.00</del> $65.00</p>
                     <button class="btn">
-                        <span class="material-symbols-outlined">add_shopping_cart</span>
                         Add To Cart
                     </button>
                 </div>
 
                 <div class="musthave_card">
                     <img src="../milesstyle/casual.jpg" alt="must have">
-                    <h4>Basic Wear</h4>
-                    <p><del>$35.00</del> $25.00</p>
+                    <h4 class="musthave_heading">Basic Wear</h4>
+                    <p class="musthave_text"><del>$35.00</del> $25.00</p>
                     <button class="btn">
-                        <span class="material-symbols-outlined">add_shopping_cart</span>
                         Add To Cart
                     </button>
                 </div>
             </div>
         </section>
 
+    </div>
 
         <section class="news">
             <div class="section_container news_container">
-                <h2 class="section_title">Latest News</h2>
+                <h2 class="news_head">Latest News</h2>
                 <div class="news_grids">
                     <div class="news_card">
                         <img src="../milesstyle/new1.jpg" alt="news">
@@ -306,100 +300,88 @@
             </div>
         </section>
 
-
-        <section class="section_container brands_container">
-            <div class="brand_image">
-                <img src="../milesstyle/logo.png" alt="brand">
-            </div>
-            <div class="brand_image">
-                <img src="../milesstyle/logo.png" alt="brand">
-            </div>
-            <div class="brand_image">
-                <img src="../milesstyle/logo.png" alt="brand">
-            </div>
-        </section>
-
-        
             <!-- TESTIMONIAL SECTION (Extended to 6) -->
-        <section class="review" id="review">
-                <h2 class="heading">What Our Customers Say</h2>
-                <div class="box-container">
-                    <div class="box one">
-                        <img src="https://i.pravatar.cc/100?img=1" class="user" />
-                        <h3>Jessica Lane</h3>
-                        <p>"Absolutely love the collection! MilezStyle never disappoints. The quality is top-notch."</p>
-                        <div class="stars">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-half-line"></i>
+             <div class="testimonial_container">
+                <section class="review" id="review">
+                        <h2 class="section_title ">What Our Customers Say</h2>
+                        <div class="box-container">
+                            <div class="box one">
+                                <img src="https://i.pravatar.cc/100?img=1" class="user" />
+                                <h3>Jessica Lane</h3>
+                                <p>"Absolutely love the collection! MilezStyle never disappoints. The quality is top-notch."</p>
+                                <div class="stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-line"></i>
+                                </div>
+                            </div>
+                            <div class="box two">
+                                <img src="https://i.pravatar.cc/100?img=2" class="user" />
+                                <h3>Daniel Moses</h3>
+                                <p>"Fast delivery and stylish products. My friends keep asking where I shop!"</p>
+                                <div class="stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="box three">
+                                <img src="https://i.pravatar.cc/100?img=3" class="user" />
+                                <h3>Naomi King</h3>
+                                <p>"Love the minimal aesthetic and comfort. I always find something I like here."</p>
+                                <div class="stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                            </div>
+                            <div class="box four">
+                                <img src="https://i.pravatar.cc/100?img=4" class="user" />
+                                <h3>Kevin Trust</h3>
+                                <p>"Excellent customer service and beautiful pieces. Highly recommend MilezStyle!"</p>
+                                <div class="stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                            </div>
+                            <div class="box five">
+                                <img src="https://i.pravatar.cc/100?img=5" class="user" />
+                                <h3>Chioma Bello</h3>
+                                <p>"As a fashion lover, I'm always impressed with their trending drops."</p>
+                                <div class="stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="box six">
+                                <img src="https://i.pravatar.cc/100?img=6" class="user" />
+                                <h3>Samuel Ade</h3>
+                                <p>"Superb quality, good packaging, and fast delivery. Will keep shopping here."</p>
+                                <div class="stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-line"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="box two">
-                        <img src="https://i.pravatar.cc/100?img=2" class="user" />
-                        <h3>Daniel Moses</h3>
-                        <p>"Fast delivery and stylish products. My friends keep asking where I shop!"</p>
-                        <div class="stars">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                        </div>
-                    </div>
-                    <div class="box three">
-                        <img src="https://i.pravatar.cc/100?img=3" class="user" />
-                        <h3>Naomi King</h3>
-                        <p>"Love the minimal aesthetic and comfort. I always find something I like here."</p>
-                        <div class="stars">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-line"></i>
-                        </div>
-                    </div>
-                    <div class="box four">
-                        <img src="https://i.pravatar.cc/100?img=4" class="user" />
-                        <h3>Kevin Trust</h3>
-                        <p>"Excellent customer service and beautiful pieces. Highly recommend MilezStyle!"</p>
-                        <div class="stars">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-line"></i>
-                        </div>
-                    </div>
-                    <div class="box five">
-                        <img src="https://i.pravatar.cc/100?img=5" class="user" />
-                        <h3>Chioma Bello</h3>
-                        <p>"As a fashion lover, I'm always impressed with their trending drops."</p>
-                        <div class="stars">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                        </div>
-                    </div>
-                    <div class="box six">
-                        <img src="https://i.pravatar.cc/100?img=6" class="user" />
-                        <h3>Samuel Ade</h3>
-                        <p>"Superb quality, good packaging, and fast delivery. Will keep shopping here."</p>
-                        <div class="stars">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-half-line"></i>
-                        </div>
-                    </div>
-                </div>
-        </section>
+                </section>
+            </div>
 
-</div>
+
 
             <!-- FOOTER SECTION -->
             <footer class="footer">

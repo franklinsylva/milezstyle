@@ -77,7 +77,7 @@ body{
     margin: auto;
     position: relative;
 }
-.container_main::before{
+/* .container_main::before{
     position: absolute;
     content: "";
     width: 350px;
@@ -87,7 +87,7 @@ body{
     background: linear-gradient(#02010085);
     z-index: 2;
     border-radius: 50%;
-}
+} */
 .hero-text{
     text-align: center;
     font-size: 6.9rem;
